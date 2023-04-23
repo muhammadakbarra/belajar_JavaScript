@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innerHtml</title>
+</head>
+
+<body>
+    <div id="menu-makanan"></div>
+
+    <script>
+        var menuMakanan = document.getElementById("menu-makanan");
+        menuMakanan.innerHTML = `<h2> ini adalah menu makanannya</h2>
+        <ul>
+            <li class="list-menu">ayam</li>
+            <li class="list-menu">ikan</li>
+            <li class="list-menu">kerupuk</li>
+            </ul>`
+    </script>
+</body>
+
+</html>
