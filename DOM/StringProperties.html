@@ -1,43 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>String properties</title>
-</head>
+  </head>
 
-<body>
-    <div id="jawaban">
-
-    </div>
+  <body>
+    <div id="jawaban"></div>
     <script>
+      // length
+      var jwb = document.getElementById("jawaban");
+      var kalimat = "JavaScript is Amazing";
 
-        // length
-        var jwb = document.getElementById("jawaban")
-        var kalimat = "JavaScript is Amazing"
+      jwb.innerHTML = kalimat.length; //21
 
-        jwb.innerHTML = kalimat.length //21
+      // charAt([indeks])
+      kalimat = "i am  a string";
+      jwb.innerHTML = kalimat.charAt(9); //9
 
-        // charAt([indeks])
-        kalimat = "i am  a string"
-        jwb.innerHTML = kalimat.charAt(9) //9
+      // concat
+      var string1 = "good";
+      var string2 = "luck";
+      jwb.innerHTML = string1.concat(string2); //goodluck
 
-        // concat
-        var string1 = 'good'
-        var string2 = 'luck'
-        jwb.innerHTML = string1.concat(string2) //goodluck
+      // indexOf
+      var text = "dung dung ces!";
+      jwb.innerHTML = text.indexOf("c"); //10
 
-        // indexOf
-        var text = 'dung dung ces!'
-        jwb.innerHTML = text.indexOf('c') //10
+      // .substring([indeks awal], [indeks akhir (optional)])
+      text = "Lykan Hypersport";
+      jwb.innerHTML = text.substring(6); //hypersport
 
-        // .substring([indeks awal], [indeks akhir (optional)])
-        text = 'Lykan Hypersport'
-        jwb.innerHTML = text.substring(6) //hypersport
+      // .substr([indeks awal], [jumlah karakter yang diambil (optional)])
+      jwb.innerHTML = text.substr(4, 10); //n Hyperspo\
 
+      // .toUpperCase
+      var letter = "my Name is Akbar";
+      jwb.innerHTML = letter.toUpperCase(); //MY NAME IS AKBAR
+
+      // .toLowerCase
+      jwb.innerHTML = letter.toLowerCase(); //my name is akbar
     </script>
-</body>
-
+  </body>
 </html>

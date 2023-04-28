@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dom Events</title>
+  </head>
+  <body>
+    <h1>Berlatih Kondisional</h1>
+    <h3>Masukkan nama dan peranmu!</h3>
+    <form action="#" id="formConditional">
+      <input type="text" name="name" id="name" placeholder="Isi nama disini" />
+      <input type="text" name="role" id="role" placeholder="Isi role disini" />
+      <input type="submit" value="Mulai Permainan" />
+    </form>
+    <h3>jawaban dari console game:</h3>
+    <div id="jawaban"></div>
+    <script>
+      var form = document.getElementById("formConditional");
+      var jawaban = document.getElementById("jawaban");
+
+      form.addEventListener("submit", function (event) {
+        event.preventDefault();
+        var name = document.getElementById("name").value;
+        var role = document.getElementById("role").value;
+        jawaban.innerHTML = name + " " + role;
+      });
+    </script>
+  </body>
+</html>
