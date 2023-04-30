@@ -5,20 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Function</title>
+    <title>For Looping</title>
 </head>
 
 <body>
+    <h1>Berlatih Looping</h1>
     <div id="jawaban">
 
     </div>
+
     <script>
         var jawaban = document.getElementById("jawaban");
-        function munculkanHello() {
-            return "Hello world"
+        var jawabanKonsol = "";
+        for (var angka = 1; angka <= 10; angka++) {
+            jawabanKonsol += 'Iterasi ke-' + angka + "<br>";
         }
-
-        jawaban.innerHTML = munculkanHello();
+        jawaban.innerHTML = jawabanKonsol
     </script>
 </body>
 

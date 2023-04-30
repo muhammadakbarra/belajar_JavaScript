@@ -5,20 +5,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Function</title>
+    <title>Function With Parameter</title>
 </head>
 
 <body>
     <div id="jawaban">
 
     </div>
+
     <script>
         var jawaban = document.getElementById("jawaban");
-        function munculkanHello() {
-            return "Hello world"
+        function kelipatanDua(angka) {
+            return 2 * angka
         }
+        jawaban.innerHTML = kelipatanDua(18);
 
-        jawaban.innerHTML = munculkanHello();
+        // dengan 2 parameter
+        function tambah(angka1, angka2) {
+            return angka1 + angka2
+        }
+        jawaban.innerHTML = tambah(10, 30);
     </script>
 </body>
 
