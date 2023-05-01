@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method 2</title>
+</head>
+
+<body>
+    <div id="jawaban">
+
+    </div>
+    <script>
+        var jawaban = document.getElementById("jawaban");
+        // slice
+        var array = [2, 3, 6, 5, 8];
+        var slice1 = array.slice(1, 4); //slice untuk memotong sebuah nilai pada array
+
+        //splice
+        var fruits = ["banana ", "orange ", "grape "];
+        fruits.splice(1, 0, "watermelon ");//untuk menambahkan nulai array di tengah
+
+        //split
+        var biodata = "Muhammd: Akbar:doe";
+        var name = biodata.split(":"); //split untuk memisahkan string dengan karakter pemisah
+
+        //join
+        var title = ["My", "First", "experience", "as", "Programmer"];
+        var slug = title.join("-"); //mengubah sebuah array menjadi string/ di sambung
+        // output
+        var hasil = "Array: " + array + "<br>Slice: " + slice1 + "<br>Splice: " + fruits + "<br>Split: " + name + "<br>Join: " + slug;
+        jawaban.innerHTML = hasil;
+
+
+
+    </script>
+</body>
+
+</html>

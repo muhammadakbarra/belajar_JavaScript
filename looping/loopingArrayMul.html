@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Looping Array Multimentional</title>
+</head>
+
+<body>
+    <h1>Berlatih looping Array Multimentional</h1>
+    <ul id="list-item">
+
+    </ul>
+    <script>
+        var jawaban = document.getElementById("list-item");
+        //variabel array
+        var indexArray = [
+            ["ica", "19", "barru"],
+            ["Akbar", "20", "mulia"],
+            ["heimalook", "24", "makasar"],
+            ["psm", "25", "pare-pare"]
+
+        ];
+
+        //variabel tampung
+        var jawabanKonsol = "";
+        for (var i = 0; i < indexArray.length; i++) {
+            jawabanKonsol += '<li>Nama Peserta - ' + indexArray[i][0] + '<br>Umur Peserta - ' + indexArray[i][1] + "<br>Kota peserta - " + indexArray[i][2] + "</li><br>";
+        }
+        jawaban.innerHTML = jawabanKonsol;
+    </script>
+</body>
+
+</html>

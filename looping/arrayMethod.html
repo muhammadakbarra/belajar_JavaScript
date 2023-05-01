@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Method</title>
+</head>
+
+<body>
+    <div id="jawaban">
+
+    </div>
+    <script>
+        var jawaban = document.getElementById("jawaban");
+        var arr = [1, 3, 4, 7];
+        var arr1 = ['a', 'c', 'b', 'x', 'p']; //hanya mencoba jika menggunakan string
+        arr.push(2, 9); //menambah
+        arr.pop(); //mengahaous nilai paling belakang pada array
+        arr.unshift(20); //menambah nilai array pada index pertama atau index 0
+        arr.shift(); //mengahapush index 0
+        arr.sort(); //untuk mengurutkan nilai pada array
+        arr1.sort(); //mengetes apakah string bisa di urutkan
+
+        jawabanKonsol = "";
+        for (var i = 0; i < arr.length; i++) {
+            jawaban.innerHTML += arr[i] + " ";
+            jawaban.innerHTML += arr1[i] + " ";
+
+        }
+    </script>
+</body>
+
+</html>
